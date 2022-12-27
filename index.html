@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QQ空间-分享生活,留住感动</title>
+    <style type="text/css">
+        body {
+            background: url("images/background.png") no-repeat;
+            background-size: 100%;
+        }
+
+        .picture {
+            width: 350px;
+            height: 130px;
+            margin-left: 245px;
+            margin-top: 70px;
+        }
+
+        /* 菜单框 */
+        .main {
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 15px;
+            width: 350px;
+            height: 300px;
+            background: white;
+            /*让表单垂直居中在界面*/
+            position: absolute;
+            top: 45%;
+            left: 65%;
+            margin-top: -175px;
+            margin-left: -175px;
+            border: 1px solid #dad9d6;
+        }
+
+        .title {
+            height: 10px;
+            line-height: 20px;
+            padding-left: 140px;
+            font-family: ‘SimHei’;
+        }
+
+        .title span {
+            font-size: 20px;
+        }
+
+        .title-msg {
+            height: 64px;
+            line-height: 64px;
+            padding-left: 90px;
+        }
+
+        .title-msg span {
+            font-size: 12px;
+
+        }
+
+        /* 输入框属性 */
+        .input-content input {
+            width: 240px;
+            height: 35px;
+            border: 1px solid #dad9d6;
+            padding-left: 15px;
+            margin-left: 45px;
+        }
+
+        /* 登录按钮属性 */
+        .enter-btn {
+            margin-top: 20px; width : 350px;
+            height: 40px;
+            color: white;
+            background: #00aaef;
+            border: 0px;
+            width: 260px;
+            margin-left: 45px;
+        }
+
+        .foor {
+            font-size: 12px;
+            color: #d7d7d7;
+            margin-top: 20px;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* 底部标签 */
+        .bottomDiv1{
+            height: 25px;
+            position: absolute;
+            bottom: 85px;
+            margin-left: 280px;
+        }
+
+        .bottomDiv2{
+            height: 25px;
+            position: absolute;
+            bottom: 60px;
+            margin-left: 540px;
+        }
+
+        .bottomDiv3{
+            height: 25px;
+            position: absolute;
+            bottom: 35px;
+            margin-left: 580px;
+        }
+
+        .bottom {
+            font-size: 14px;
+            font-weight: 500;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<!-- QQ空间样式图片 -->
+<div class="picture">
+    <img src="images/QQSpace.png" alt="QQ空间" width="100%" height="auto">
+</div>
+
+<!-- 登录框 -->
+<div class="main">
+    <div class="title">
+        <span>密码登录</span>
+    </div>
+
+    <div class="title-msg">
+        <span>推荐使用<span style="color:#00aaef">快捷登录</span>，防止盗号</span>
+    </div>
+
+    <form class="login-form" method="post">
+        <!-- 输入框 -->
+        <div class="input-content">
+            <div >
+                <input type="text"  placeholder="支持QQ号/邮箱/手机号登录" name="username" required>
+            </div>
+            <div style="margin-top: 16px">
+                <input type="password" placeholder="请输入密码" name="password" required>
+            </div>
+        </div>
+
+        <!-- 登录按钮 -->
+        <form style="text-align: center" method="get">
+            <button type="submit" class="enter-btn" formaction="https://qzone.qq.com/index.html">登录</button>
+        </form>
+
+        <div class="foor">
+            <div class="left">
+                <span><a href="#">忘记密码？</a></span>
+            </div>
+            <div class="right">
+                <span><a href="">还没有账号，立即注册</a></span>
+            </div>
+        </div>
+    </form>
+</div>
+<!-- 底部栏目 -->
+<div class="bottomDiv1">
+    <a href="" class="bottom">
+        反馈建议|官方空间|空间活动|空间应用|ABCmouse腾讯版|腾讯原创馆|QQ互联|QQ登录|社交组件|应用侵权投诉|Complaint Guidelines</a>
+</div>
+
+<div class="bottomDiv2">
+    <a href="" class="bottom">Copyright © 2005 - 2022 Tencent.All Rights Reserved.</a>
+</div>
+
+<div class="bottomDiv3">
+    <a href="" class="bottom">腾讯公司 版权所有 粤网文[2017]6138-1456号</a>
+</div>
+</body>
+</html>
